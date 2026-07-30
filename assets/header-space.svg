@@ -1,0 +1,108 @@
+<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f"/>
+      <stop offset="45%" stop-color="#0d0a24"/>
+      <stop offset="100%" stop-color="#1a0e2e"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <radialGradient id="nebula1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1000" height="320" rx="14" fill="url(#spaceBg)"/>
+
+  <!-- Nebula clouds -->
+  <ellipse cx="150" cy="140" rx="190" ry="110" fill="url(#nebula1)" opacity="0.35"/>
+  <ellipse cx="860" cy="170" rx="190" ry="110" fill="url(#nebula2)" opacity="0.3"/>
+
+  <!-- Starfield -->
+  <g fill="#f8fafc">
+    <circle cx="60" cy="40" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="90" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="-1s" repeatCount="indefinite"/></circle>
+    <circle cx="205" cy="30" r="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" begin="-0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="80" cy="185" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="235" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="-1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="40" cy="260" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" begin="-0.7s" repeatCount="indefinite"/></circle>
+    <circle cx="270" cy="60" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" begin="-1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="205" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="-0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="50" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="-0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="905" cy="120" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" begin="-1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="955" cy="200" r="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" begin="-0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="255" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" begin="-1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="765" cy="40" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="-0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="270" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="-1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="20" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" begin="-2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="925" cy="270" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="-0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="30" cy="120" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="-1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="975" cy="60" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" begin="-1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Shooting star -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="55" y2="18" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
+    <animateMotion path="M -60,-30 L 1060,300" dur="9s" repeatCount="indefinite" rotate="auto"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04;0.14;0.32;0.42;1" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Bohr-model atom orbits (centered on name) -->
+  <circle cx="500" cy="140" r="8" fill="#f8fafc" filter="url(#glow)">
+    <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <g>
+    <ellipse cx="500" cy="140" rx="270" ry="42" fill="none" stroke="#7dd3fc" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle r="4" fill="#7dd3fc">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M 230,140 A 270,42 0 1,1 770,140 A 270,42 0 1,1 230,140"/>
+    </circle>
+  </g>
+
+  <g transform="rotate(60 500 140)">
+    <ellipse cx="500" cy="140" rx="270" ry="42" fill="none" stroke="#c084fc" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle r="4" fill="#c084fc">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M 770,140 A 270,42 0 1,0 230,140 A 270,42 0 1,0 770,140"/>
+    </circle>
+  </g>
+
+  <g transform="rotate(-60 500 140)">
+    <ellipse cx="500" cy="140" rx="270" ry="42" fill="none" stroke="#f472b6" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle r="4" fill="#f472b6">
+      <animateMotion dur="7.5s" repeatCount="indefinite" path="M 230,140 A 270,42 0 1,1 770,140 A 270,42 0 1,1 230,140"/>
+    </circle>
+  </g>
+
+  <!-- Name + tagline (floating) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+    <text x="500" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" fill="url(#nameGrad)">Galuh Kurnia Pratama</text>
+    <text x="500" y="162" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a5b4fc">
+      Undergraduate Physics Student at Universitas Negeri Surabaya
+      <animate attributeName="opacity" values="0.5;0.95;0.5" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="184" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a5b4fc">
+      Software Engineer · Data Analytics
+      <animate attributeName="opacity" values="0.5;0.95;0.5" dur="3s" begin="-0.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
