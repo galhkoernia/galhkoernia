@@ -38,24 +38,6 @@ Currently, I am expanding my expertise through real-world projects while continu
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy"/>
 </p>
 
-### Backend Development
-
-<p>
-<img src="https://skillicons.dev/icons?i=flask" />
-</p>
-
-### IoT & Embedded
-
-<p>
-<img src="https://skillicons.dev/icons?i=arduino" />
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge"/>
-</p>
-
-### Tools
-
-<p>
-<img src="https://skillicons.dev/icons?i=github,vscode,figma" />
-</p>
 
 ---
 
