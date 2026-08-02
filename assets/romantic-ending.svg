@@ -1,17 +1,8 @@
 <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" width="100%" height="220">
-<!-- ============================================================
-     romantic-ending.svg
-     Pixel-art style animated GitHub README scene.
-     Pure SVG + SMIL + CSS. No JS, no external assets.
-     Total loop duration: 15s, seamless repeatCount="indefinite"
-     ============================================================ -->
 <defs>
   <style>
     .pixel { shape-rendering: crispEdges; }
-    text { font-family: monospace; }
   </style>
-
-  <!-- moon soft glow -->
   <filter id="moonGlow" x="-100%" y="-100%" width="300%" height="300%">
     <feGaussianBlur stdDeviation="4" result="blur"/>
     <feMerge>
@@ -19,18 +10,19 @@
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
-
-  <!-- reusable star pixel -->
+  <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+    <feGaussianBlur stdDeviation="0.6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
   <g id="starPixel" class="pixel">
     <rect x="-1" y="-1" width="2" height="2" fill="#ffffff"/>
   </g>
-
-  <!-- reusable grass blade -->
   <g id="bladeShape" class="pixel">
     <rect x="-1" y="-8" width="2" height="8" fill="#2e7d4f"/>
   </g>
-
-  <!-- reusable tiny pixel flower -->
   <g id="flowerShape" class="pixel">
     <rect x="-1" y="-3" width="2" height="6" fill="#3a8f5c"/>
     <rect x="-3" y="-6" width="2" height="2" fill="#ffd6e8"/>
@@ -38,81 +30,118 @@
     <rect x="-1" y="-8" width="2" height="2" fill="#ffd6e8"/>
     <rect x="-1" y="-6" width="2" height="2" fill="#ffef9f"/>
   </g>
+  <g id="letterG" class="pixel" fill="#fff7e0">
+    <rect x="-4" y="0" width="1.6" height="1.6"/>
+    <rect x="-2.4" y="0" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="0" width="1.6" height="1.6"/>
+    <rect x="0.8" y="0" width="1.6" height="1.6"/>
+    <rect x="2.4" y="0" width="1.6" height="1.6"/>
+    <rect x="-4" y="1.6" width="1.6" height="1.6"/>
+    <rect x="-4" y="3.2" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="3.2" width="1.6" height="1.6"/>
+    <rect x="0.8" y="3.2" width="1.6" height="1.6"/>
+    <rect x="2.4" y="3.2" width="1.6" height="1.6"/>
+    <rect x="-4" y="4.8" width="1.6" height="1.6"/>
+    <rect x="2.4" y="4.8" width="1.6" height="1.6"/>
+    <rect x="-4" y="6.4" width="1.6" height="1.6"/>
+    <rect x="-2.4" y="6.4" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="6.4" width="1.6" height="1.6"/>
+    <rect x="0.8" y="6.4" width="1.6" height="1.6"/>
+    <rect x="2.4" y="6.4" width="1.6" height="1.6"/>
+  </g>
+  <g id="letterE" class="pixel" fill="#fff7e0">
+    <rect x="-4" y="0" width="1.6" height="1.6"/>
+    <rect x="-2.4" y="0" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="0" width="1.6" height="1.6"/>
+    <rect x="0.8" y="0" width="1.6" height="1.6"/>
+    <rect x="2.4" y="0" width="1.6" height="1.6"/>
+    <rect x="-4" y="1.6" width="1.6" height="1.6"/>
+    <rect x="-4" y="3.2" width="1.6" height="1.6"/>
+    <rect x="-2.4" y="3.2" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="3.2" width="1.6" height="1.6"/>
+    <rect x="0.8" y="3.2" width="1.6" height="1.6"/>
+    <rect x="-4" y="4.8" width="1.6" height="1.6"/>
+    <rect x="-4" y="6.4" width="1.6" height="1.6"/>
+    <rect x="-2.4" y="6.4" width="1.6" height="1.6"/>
+    <rect x="-0.8" y="6.4" width="1.6" height="1.6"/>
+    <rect x="0.8" y="6.4" width="1.6" height="1.6"/>
+    <rect x="2.4" y="6.4" width="1.6" height="1.6"/>
+  </g>
 </defs>
 
-<!-- ================= BACKGROUND ================= -->
-<g id="background">
+<g>
   <rect x="0" y="0" width="900" height="220" fill="#0d1117" class="pixel"/>
 </g>
 
-<!-- ================= MOON ================= -->
-<g id="moon" filter="url(#moonGlow)">
+<g filter="url(#moonGlow)">
   <circle cx="790" cy="42" r="20" fill="#fff7e0">
     <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="20;20.6;20" dur="6s" repeatCount="indefinite"/>
   </circle>
   <circle cx="784" cy="36" r="3" fill="#f2e6c2" opacity="0.5"/>
   <circle cx="796" cy="48" r="2.5" fill="#f2e6c2" opacity="0.5"/>
 </g>
 
-<!-- ================= STARS ================= -->
-<g id="stars">
+<g>
   <use href="#starPixel" x="60" y="30">
     <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" begin="0s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="140" y="55">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.95;0.15" dur="3.3s" begin="0.5s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="230" y="25">
     <animate attributeName="opacity" values="1;0.2;1" dur="2.3s" begin="0.2s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="330" y="45">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="1.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="1.3s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="420" y="20">
-    <animate attributeName="opacity" values="1;0.3;1" dur="3.4s" begin="0.7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="3.6s" begin="0.7s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="520" y="35">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="610" y="18">
-    <animate attributeName="opacity" values="1;0.2;1" dur="2.9s" begin="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.2;1" dur="3.1s" begin="0.3s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="680" y="60">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" begin="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" begin="1.1s" repeatCount="indefinite"/>
   </use>
   <use href="#starPixel" x="850" y="70">
-    <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" begin="0.6s" repeatCount="indefinite"/>
   </use>
 </g>
 
-<!-- ================= GRASS ================= -->
-<g id="grass">
+<g>
   <rect x="0" y="188" width="900" height="32" fill="#123a25" class="pixel"/>
   <rect x="0" y="184" width="900" height="6" fill="#1a4d31" class="pixel"/>
-
-  <g id="grassBlades" fill="#2e7d4f">
-    <!-- staggered gentle sway across the field -->
+  <g fill="#2e7d4f">
     <g>
       <use href="#bladeShape" x="20" y="190"/>
-      <use href="#bladeShape" x="35" y="192"/>
-      <use href="#bladeShape" x="80" y="190"/>
       <use href="#bladeShape" x="120" y="192"/>
-      <use href="#bladeShape" x="200" y="190"/>
-      <use href="#bladeShape" x="260" y="192"/>
       <use href="#bladeShape" x="360" y="190"/>
-      <use href="#bladeShape" x="480" y="192"/>
-      <use href="#bladeShape" x="600" y="190"/>
       <use href="#bladeShape" x="650" y="192"/>
-      <use href="#bladeShape" x="720" y="190"/>
-      <use href="#bladeShape" x="800" y="192"/>
       <use href="#bladeShape" x="860" y="190"/>
-      <animateTransform attributeName="transform" type="rotate" values="0 0 220;3 0 220;-3 0 220;0 0 220" dur="3.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 220;3 0 220;-2 0 220;0 0 220" dur="3.4s" begin="0s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <use href="#bladeShape" x="35" y="192"/>
+      <use href="#bladeShape" x="200" y="190"/>
+      <use href="#bladeShape" x="480" y="192"/>
+      <use href="#bladeShape" x="720" y="190"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 220;-2.5 0 220;3 0 220;0 0 220" dur="3.9s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <use href="#bladeShape" x="80" y="190"/>
+      <use href="#bladeShape" x="260" y="192"/>
+      <use href="#bladeShape" x="600" y="190"/>
+      <use href="#bladeShape" x="800" y="192"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 220;2.8 0 220;-3 0 220;0 0 220" dur="4.4s" begin="0.9s" repeatCount="indefinite"/>
     </g>
   </g>
 </g>
 
-<!-- ================= FLOWERS (scattered field decoration) ================= -->
-<g id="flowers">
+<g>
   <g>
     <use href="#flowerShape" x="95" y="200"/>
     <animateTransform attributeName="transform" type="rotate" values="0 95 200;5 95 200;0 95 200" dur="4s" repeatCount="indefinite"/>
@@ -131,51 +160,57 @@
   </g>
 </g>
 
-<!-- ================= AMBIENT PARTICLES (fireflies) ================= -->
-<g id="particles" fill="#ffe9a8">
-  <circle cx="150" cy="140" r="1.4" opacity="0">
-    <animate attributeName="cy" values="150;110;150" dur="6s" begin="0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.9;0" dur="6s" begin="0s" repeatCount="indefinite"/>
+<g fill="#ffe9a8">
+  <circle cx="150" cy="140" r="1.3" opacity="0">
+    <animate attributeName="cy" values="150;112;150" dur="6.2s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="6.2s" begin="0s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="400" cy="120" r="1.2" opacity="0">
-    <animate attributeName="cy" values="160;115;160" dur="7s" begin="1.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.8;0" dur="7s" begin="1.5s" repeatCount="indefinite"/>
+  <circle cx="400" cy="120" r="1.1" opacity="0">
+    <animate attributeName="cy" values="160;116;160" dur="7.3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.35;0" dur="7.3s" begin="1.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="650" cy="130" r="1.4" opacity="0">
-    <animate attributeName="cy" values="155;105;155" dur="6.5s" begin="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.9;0" dur="6.5s" begin="3s" repeatCount="indefinite"/>
+  <circle cx="650" cy="130" r="1.3" opacity="0">
+    <animate attributeName="cy" values="155;106;155" dur="6.7s" begin="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="6.7s" begin="3s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="500" cy="150" r="1.1" opacity="0">
-    <animate attributeName="cy" values="165;125;165" dur="5.5s" begin="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.7;0" dur="5.5s" begin="2s" repeatCount="indefinite"/>
+  <circle cx="500" cy="150" r="1" opacity="0">
+    <animate attributeName="cy" values="165;127;165" dur="5.8s" begin="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.3;0" dur="5.8s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="270" cy="145" r="1" opacity="0">
+    <animate attributeName="cy" values="158;120;158" dur="6.9s" begin="3.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.32;0" dur="6.9s" begin="3.6s" repeatCount="indefinite"/>
   </circle>
 </g>
 
-<!-- ================= BOY (blue outfit) =================
-     Origin at feet (bottom-center). Walks from x=150 toward the
-     middle of the field during 2s-5s, pauses, offers the flower
-     6-8s, then takes one small step closer at 10-12s. -->
-<g id="boy">
+<g>
   <animateTransform attributeName="transform" type="translate"
     values="150,190;150,190;385,190;385,190;393,190;393,190"
     keyTimes="0;0.1333;0.3333;0.6667;0.8;1"
     dur="15s" repeatCount="indefinite"
     calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 0 0"/>
 
-  <!-- idle breathing wraps the whole body -->
-  <g id="boyBreath">
+  <g transform="translate(0,-66)">
+    <g opacity="0.85">
+      <animate attributeName="opacity" values="0.8;0.9;0.8" dur="2.6s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2.5;0,0" dur="2.6s" repeatCount="indefinite"/>
+        <use href="#letterG" filter="url(#glow)"/>
+      </g>
+    </g>
+  </g>
+
+  <g>
     <animateTransform attributeName="transform" type="scale" values="1,1;1,1.02;1,1" dur="1.8s" repeatCount="indefinite"/>
 
-    <!-- back leg -->
-    <g id="boyLegBack">
+    <g>
       <rect x="-6" y="-16" width="5" height="16" fill="#3a6fd8" class="pixel"/>
       <animateTransform attributeName="transform" type="translate"
         values="0,0;0,0;0,-2;0,0;0,0;0,0;0,-1.4;0,0;0,0"
         keyTimes="0;0.1333;0.2;0.28;0.3333;0.6667;0.72;0.78;1"
         dur="15s" repeatCount="indefinite"/>
     </g>
-    <!-- front leg -->
-    <g id="boyLegFront">
+    <g>
       <rect x="1" y="-16" width="5" height="16" fill="#3568c9" class="pixel"/>
       <animateTransform attributeName="transform" type="translate"
         values="0,0;0,0;0,0;0,-2;0,0;0,0;0,0;0,-1.4;0,0;0,0"
@@ -183,12 +218,10 @@
         dur="15s" repeatCount="indefinite"/>
     </g>
 
-    <!-- body -->
     <rect x="-7" y="-34" width="14" height="19" fill="#4F8CFF" class="pixel"/>
     <rect x="-7" y="-34" width="14" height="4" fill="#3a6fd8" class="pixel"/>
 
-    <!-- back arm holding the flower, tucked behind body then extended -->
-    <g id="boyArm" transform-origin="0 -30">
+    <g transform-origin="0 -30">
       <animateTransform attributeName="transform" type="rotate"
         values="150;150;150;20;0;0;0"
         keyTimes="0;0.1333;0.4;0.48;0.5333;0.6667;1"
@@ -196,60 +229,55 @@
         calcMode="spline"
         keySplines="0.4 0 0.2 1;0 0 0 0;0.4 0 0.2 1;0.4 0 0.2 1;0 0 0 0;0 0 0 0"/>
       <rect x="-2" y="-30" width="4" height="12" fill="#3a6fd8" class="pixel"/>
-      <!-- flower held in hand, reaches toward the girl then hands off -->
-      <g transform="translate(0,-18)">
-        <rect x="-1" y="-4" width="2" height="6" fill="#3a8f5c" class="pixel"/>
-        <rect x="-3" y="-7" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-        <rect x="1" y="-7" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-        <rect x="-1" y="-9" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-        <rect x="-1" y="-7" width="2" height="2" fill="#ffef9f" class="pixel"/>
+      <g transform="translate(0,-18)" opacity="1">
         <animate attributeName="opacity" values="1;1;1;1;0;0" keyTimes="0;0.5333;0.58;0.62;0.6467;1" dur="15s" repeatCount="indefinite"/>
         <animateTransform attributeName="transform" type="translate" additive="sum"
           values="0,0;0,0;7,-3;7,-3"
           keyTimes="0;0.5333;0.6;1"
           dur="15s" repeatCount="indefinite"
           calcMode="spline" keySplines="0.4 0 0.2 1;0 0 0 0;0 0 0 0"/>
+        <use href="#flowerShape" transform="translate(0,-1)"/>
       </g>
     </g>
 
-    <!-- front arm, relaxed -->
     <rect x="6" y="-31" width="4" height="11" fill="#4F8CFF" class="pixel"/>
 
-    <!-- head -->
     <rect x="-6" y="-46" width="12" height="12" fill="#ffd8ad" class="pixel"/>
-    <!-- hair -->
     <rect x="-7" y="-49" width="14" height="5" fill="#161616" class="pixel"/>
     <rect x="-7" y="-46" width="3" height="6" fill="#161616" class="pixel"/>
     <rect x="4" y="-46" width="3" height="6" fill="#161616" class="pixel"/>
-    <!-- eye -->
     <rect x="1" y="-41" width="2" height="2" fill="#1c1c1c" class="pixel"/>
   </g>
 </g>
 
-<!-- ================= GIRL (pink outfit) =================
-     Starts at x=550. About 0.8s after the boy sets off, she walks
-     to meet him too, pauses, reaches out for the flower, then
-     takes one small step closer at 10-12s. Blinking, hair sway. -->
-<g id="girl">
+<g>
   <animateTransform attributeName="transform" type="translate"
     values="550,190;550,190;425,190;425,190;417,190;417,190"
     keyTimes="0;0.1867;0.3333;0.6667;0.8;1"
     dur="15s" repeatCount="indefinite"
     calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 0 0"/>
 
-  <g id="girlBreath">
+  <g transform="translate(0,-66)">
+    <g opacity="0.85">
+      <animate attributeName="opacity" values="0.82;0.9;0.82" dur="2.9s" begin="0.4s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2.3;0,0" dur="2.9s" begin="0.4s" repeatCount="indefinite"/>
+        <use href="#letterE" filter="url(#glow)"/>
+      </g>
+    </g>
+  </g>
+
+  <g>
     <animateTransform attributeName="transform" type="scale" values="1,1;1,1.02;1,1" dur="2s" begin="0.4s" repeatCount="indefinite"/>
 
-    <!-- back leg -->
-    <g id="girlLegBack">
+    <g>
       <rect x="-6" y="-15" width="5" height="15" fill="#e0579e" class="pixel"/>
       <animateTransform attributeName="transform" type="translate"
         values="0,0;0,0;0,-2;0,0;0,0;0,0;0,-1.4;0,0;0,0"
         keyTimes="0;0.1867;0.24;0.29;0.3333;0.6667;0.72;0.78;1"
         dur="15s" repeatCount="indefinite"/>
     </g>
-    <!-- front leg -->
-    <g id="girlLegFront">
+    <g>
       <rect x="1" y="-15" width="5" height="15" fill="#d64f92" class="pixel"/>
       <animateTransform attributeName="transform" type="translate"
         values="0,0;0,0;0,0;0,-2;0,0;0,0;0,0;0,-1.4;0,0;0,0"
@@ -257,12 +285,10 @@
         dur="15s" repeatCount="indefinite"/>
     </g>
 
-    <!-- dress -->
     <path d="M -9,-33 L 9,-33 L 12,-14 L -12,-14 Z" fill="#FF7EB8" class="pixel"/>
     <rect x="-9" y="-33" width="18" height="4" fill="#f26aa8" class="pixel"/>
 
-    <!-- reaching arm (faces the boy), swings up to receive the flower -->
-    <g id="girlArm" transform-origin="-11 -30">
+    <g transform-origin="-11 -30">
       <animateTransform attributeName="transform" type="rotate"
         values="0;0;0;-65;-65;-65;-18;-18"
         keyTimes="0;0.5333;0.56;0.6;0.6467;0.6667;0.74;1"
@@ -273,52 +299,38 @@
     </g>
     <rect x="7" y="-30" width="4" height="11" fill="#f26aa8" class="pixel"/>
 
-    <!-- flower she receives, fades in once her hand meets the boy's -->
-    <g transform="translate(-15,-40)" opacity="0">
+    <g transform="translate(-14,-40)" opacity="0">
       <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.6;0.62;0.6467;0.9999;1" dur="15s" repeatCount="indefinite"/>
-      <rect x="-1" y="-4" width="2" height="6" fill="#3a8f5c" class="pixel"/>
-      <rect x="-3" y="-7" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-      <rect x="1" y="-7" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-      <rect x="-1" y="-9" width="2" height="2" fill="#FF7EB8" class="pixel"/>
-      <rect x="-1" y="-7" width="2" height="2" fill="#ffef9f" class="pixel"/>
+      <use href="#flowerShape" transform="translate(0,-1)"/>
     </g>
 
-    <!-- hair back layer, swaying -->
     <g transform-origin="0 -40">
       <animateTransform attributeName="transform" type="rotate" values="0;3;0;-3;0" dur="3.2s" repeatCount="indefinite"/>
       <rect x="-8" y="-40" width="4" height="24" fill="#4a2a1a" class="pixel"/>
       <rect x="4" y="-40" width="4" height="24" fill="#3f2415" class="pixel"/>
     </g>
 
-    <!-- head -->
     <rect x="-6" y="-46" width="12" height="12" fill="#ffdcb2" class="pixel"/>
-    <!-- hair top -->
     <rect x="-7" y="-49" width="14" height="5" fill="#4a2a1a" class="pixel"/>
     <rect x="-7" y="-46" width="3" height="4" fill="#4a2a1a" class="pixel"/>
     <rect x="4" y="-46" width="3" height="4" fill="#4a2a1a" class="pixel"/>
 
-    <!-- eyes with blink -->
-    <g id="girlEyes" fill="#1c1c1c">
+    <g fill="#1c1c1c">
       <rect x="-4" y="-41" width="2" height="2" class="pixel"/>
       <rect x="1" y="-41" width="2" height="2" class="pixel"/>
       <animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.85;0.87;0.89;1" dur="4s" repeatCount="indefinite"/>
     </g>
-    <!-- blush -->
     <rect x="-5" y="-38" width="2" height="1.5" fill="#ff9dc0" opacity="0.7" class="pixel"/>
     <rect x="3" y="-38" width="2" height="1.5" fill="#ff9dc0" opacity="0.7" class="pixel"/>
 
-    <!-- smile appears once she receives the flower -->
     <path d="M -3,-36 Q 0,-34 3,-36" stroke="#c2456f" stroke-width="1" fill="none" opacity="0" class="pixel">
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.62;0.6467;0.9999;1" dur="15s" repeatCount="indefinite"/>
     </path>
   </g>
 </g>
 
-<!-- ================= EFFECTS ================= -->
-<g id="effects">
-
-  <!-- sparkle burst the instant the flower changes hands (~9.3s) -->
-  <g id="sparkle" transform="translate(403,148)" opacity="0">
+<g>
+  <g transform="translate(403,148)" opacity="0">
     <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.6;0.62;0.6467;0.7;1" dur="15s" repeatCount="indefinite"/>
     <g fill="#ffef9f">
       <rect x="-1" y="-8" width="2" height="6" class="pixel"/>
@@ -329,38 +341,47 @@
     <animateTransform attributeName="transform" type="scale" additive="sum" values="0.4;1.1;0.4" keyTimes="0;0.5;1" dur="15s" repeatCount="indefinite"/>
   </g>
 
-  <!-- floating petals drifting after the flower exchange -->
-  <g id="petals" fill="#FF7EB8">
-    <rect id="petal1" x="395" y="146" width="3" height="3" opacity="0" class="pixel">
+  <g fill="#FF7EB8">
+    <g transform="translate(395,146)" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.62;0.64;0.68;0.74;1" dur="15s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0,0; -10,-14; -18,-6" keyTimes="0;0.68;0.74" dur="15s" repeatCount="indefinite" additive="sum"/>
-    </rect>
-    <rect id="petal2" x="410" y="144" width="3" height="3" opacity="0" class="pixel">
+      <rect x="-1.5" y="-1.5" width="3" height="3" class="pixel">
+        <animateTransform attributeName="transform" type="rotate" values="0;140;260" keyTimes="0;0.68;0.74" dur="15s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(410,144)" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6;0.63;0.69;0.75;1" dur="15s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0,0; 8,-16; 16,-4" keyTimes="0;0.69;0.75" dur="15s" repeatCount="indefinite" additive="sum"/>
-    </rect>
-    <rect id="petal3" x="403" y="151" width="3" height="3" opacity="0" class="pixel">
+      <rect x="-1.5" y="-1.5" width="3" height="3" class="pixel">
+        <animateTransform attributeName="transform" type="rotate" values="0;-120;-240" keyTimes="0;0.69;0.75" dur="15s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(403,151)" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61;0.64;0.7;0.76;1" dur="15s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0,0; -4,-20; 2,-2" keyTimes="0;0.7;0.76" dur="15s" repeatCount="indefinite" additive="sum"/>
-    </rect>
-  </g>
-
-  <!-- small heart appearing above the couple once together (~10-15s) -->
-  <g id="heart" transform="translate(405,119)" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.6667;0.72;0.999;1" dur="15s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" values="405,119;405,113;405,119" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite" additive="sum"/>
-    <g fill="#FF7EB8">
-      <rect x="-5" y="-2" width="4" height="4" class="pixel"/>
-      <rect x="1" y="-2" width="4" height="4" class="pixel"/>
-      <rect x="-3" y="-4" width="2" height="2" class="pixel"/>
-      <rect x="1" y="-4" width="2" height="2" class="pixel"/>
-      <rect x="-4" y="2" width="8" height="2" class="pixel"/>
-      <rect x="-3" y="4" width="6" height="2" class="pixel"/>
-      <rect x="-2" y="6" width="4" height="2" class="pixel"/>
-      <rect x="-1" y="8" width="2" height="2" class="pixel"/>
+      <rect x="-1.5" y="-1.5" width="3" height="3" class="pixel">
+        <animateTransform attributeName="transform" type="rotate" values="0;180;320" keyTimes="0;0.7;0.76" dur="15s" repeatCount="indefinite"/>
+      </rect>
     </g>
   </g>
 
+  <g transform="translate(405,119)" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.6667;0.72;0.999;1" dur="15s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="405,119;405,113;405,119" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite" additive="sum"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale" additive="sum" values="1;1;1.18;1;1" keyTimes="0;0.6667;0.69;0.72;1" dur="15s" repeatCount="indefinite"/>
+      <g fill="#FF7EB8">
+        <rect x="-5" y="-2" width="4" height="4" class="pixel"/>
+        <rect x="1" y="-2" width="4" height="4" class="pixel"/>
+        <rect x="-3" y="-4" width="2" height="2" class="pixel"/>
+        <rect x="1" y="-4" width="2" height="2" class="pixel"/>
+        <rect x="-4" y="2" width="8" height="2" class="pixel"/>
+        <rect x="-3" y="4" width="6" height="2" class="pixel"/>
+        <rect x="-2" y="6" width="4" height="2" class="pixel"/>
+        <rect x="-1" y="8" width="2" height="2" class="pixel"/>
+      </g>
+    </g>
+  </g>
 </g>
 
 </svg>
