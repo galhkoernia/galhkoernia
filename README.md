@@ -27,12 +27,12 @@ Currently, I am expanding my expertise through real-world projects while continu
 
 <p>
 <img src="https://skillicons.dev/icons?i=python,cpp,js" />
+<img src="https://skillicons.dev/icons?i=postgres" />
 </p>
 
 ### Data Analytics
 
 <p>
-<img src="https://skillicons.dev/icons?i=postgres,mysql" />
 <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=googlesheets&logoColor=white"/>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas"/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy"/>
