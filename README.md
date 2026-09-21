@@ -1,23 +1,20 @@
+
 <p align="center">
   <img src="./assets/header-space.svg" alt="Galuh Kurnia Pratama" width="100%"/>
 </p>
 
-> **Building Practical Technology through Data, Code, and Research.**
+> **Building Practical Software through Code, Data, and Engineering.**
 
 ## About Me
 
-I am an Physics student with a strong interest in **Data Analytics**, **Python Development**, and **Internet of Things (IoT)**. I enjoy transforming ideas into practical solutions by combining analytical thinking, software development, and engineering principles.
-
-Currently, I am expanding my expertise through real-world projects while continuously improving my technical and problem-solving skills.
+I am a Physics student interested in **Software Development**, and **Data Analytics**. I enjoy building websites, developing software systems, and exploring how technology can be used to solve practical problems. I am currently improving my programming and problem-solving skills through personal projects, research, and continuous learning.
 
 ---
 
 ## Current Focus
 
-* Data Analytics Development
-* Web Development
-* IoT Monitoring System
-* Open Source Learning
+- Software Development
+- Open Source Learning
 
 ---
 
@@ -26,28 +23,42 @@ Currently, I am expanding my expertise through real-world projects while continu
 ### Programming Languages
 
 <p>
-<img src="https://skillicons.dev/icons?i=python,cpp,js" />
-<img src="https://skillicons.dev/icons?i=postgres" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,ts" />
+</p>
+
+### Web Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind" />
+</p>
+
+### Backend & Database
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,postgres" />
 </p>
 
 ### Data Analytics
 
 <p>
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=googlesheets&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy"/>
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=googlesheets&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
 </p>
 
+### Tools & Platforms
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,arduino" />
+</p>
 
 ---
 
 ## Philosophy
 
-> Learning by building.
+> **Learning by building.**
 
-Every project represents an opportunity to solve real-world problems, improve technical skills, and create practical technology.
-
----
+I believe that building projects is one of the best ways to improve technical skills, understand new technologies, and solve practical problems.
 
 ---
 
@@ -57,7 +68,7 @@ Every project represents an opportunity to solve real-world problems, improve te
   <img src="./assets/romantic-ending.svg" alt="Romantic Ending" width="85%"/>
 </p>
 
-**Romantic Ending** - A hand-animated pixel-art SVG scene, built entirely with pure SVG and native web animation, no images, no JavaScript, no frameworks.
+**Romantic Ending** - A hand-animated pixel-art SVG scene built using pure SVG and native web animation, without images, JavaScript, or frameworks.
 
 <p align="center">
   <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white" alt="SVG"/>
@@ -68,18 +79,18 @@ Every project represents an opportunity to solve real-world problems, improve te
 
 ---
 
-*For [You](https://www.instagram.com/)*
+*For [You](https://www.instagram.com/you)*
 
 ---
 
 ## Connect With Me
 
-* LinkedIn *http://www.linkedin.com/in/galuh-kurnia-pratama-a25b9b325*
-* Instagram *https://www.instagram.com/galhkoernia_?igsh=aXVrbjZuZm90cnBk*
-* Email *galuhkoernia@gmail.com*
+- **LinkedIn:** [Galuh Kurnia Pratama](http://www.linkedin.com/in/galuh-kurnia-pratama-a25b9b325)
+- **Instagram:** [@galhkoernia_](https://www.instagram.com/galhkoernia_/)
+- **Email:** galuhkoernia@gmail.com
 
 ---
+
 Thank you for visiting my GitHub profile.
 
-I believe that continuous learning, practical implementation, and well-documented projects are the foundation of becoming a better engineer.
-
+I am always learning, building, and exploring new ways to create useful technology.
