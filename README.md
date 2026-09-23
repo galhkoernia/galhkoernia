@@ -14,6 +14,7 @@ I am a Physics student interested in **Software Development**, and **Data Analyt
 ## Current Focus
 
 - Software Development
+- Data Analytics
 - Open Source Learning
 
 ---
