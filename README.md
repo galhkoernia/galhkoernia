@@ -1,10 +1,6 @@
 
 <p align="center">
-<<<<<<< HEAD
   <img src="./assets/penguin-github-banner.svg" alt="Galuh Kurnia Pratama" width="100%"/>
-=======
-  <img src="./assets/header-space-data-analytics.svg" alt="Galuh Kurnia Pratama" width="100%"/>
->>>>>>> b1b2ac1f0716e2593aed04667e30444ccd0c7991
 </p>
 
 > **Building Practical Software through Code, Data, and Engineering.**
