@@ -63,7 +63,7 @@ I believe that building projects is one of the best ways to improve technical sk
   <img src="./assets/romantic-ending.svg" alt="Romantic Ending" width="85%"/>
 </p>
 
-**Romantic Ending** - A hand-animated pixel-art SVG scene built using pure SVG and native web animation, without images, JavaScript, or frameworks.
+A hand-animated pixel-art SVG scene built using pure SVG and native web animation, without images, JavaScript, or frameworks.
 
 <p align="center">
   <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white" alt="SVG"/>
@@ -71,10 +71,6 @@ I believe that building projects is one of the best ways to improve technical sk
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/Pixel_Art-6E44FF?style=for-the-badge&logo=pixiv&logoColor=white" alt="Pixel Art"/>
 </p>
-
----
-
-*For [You](https://www.instagram.com/you)*
 
 ---
 
