@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/header-space-software-engineering.svg" alt="Galuh Kurnia Pratama" width="100%"/>
+  <img src="./assets/header-space-data-analytics.svg" alt="Galuh Kurnia Pratama" width="100%"/>
 </p>
 
 > **Building Practical Software through Code, Data, and Engineering.**
