@@ -1,13 +1,13 @@
 
 <p align="center">
-  <img src="./assets/header-space-software-engineering.svg" alt="Galuh Kurnia Pratama" width="100%"/>
+  <img src="./assets/penguin-github-banner.svg" alt="Galuh Kurnia Pratama" width="100%"/>
 </p>
 
 > **Building Practical Software through Code, Data, and Engineering.**
 
 ## About Me
 
-I am a Physics student interested in **Software Development**, and **Data Analytics**. I enjoy building websites, developing software systems, and exploring how technology can be used to solve practical problems. I am currently improving my programming and problem-solving skills through personal projects, research, and continuous learning.
+I am a Physics student with an interest in **Software Development** and **Data Analytics**. I enjoy building practical projects, exploring how software works, and continuously improving my programming and problem-solving skills through hands-on learning.
 
 ---
 
@@ -15,42 +15,36 @@ I am a Physics student interested in **Software Development**, and **Data Analyt
 
 - Software Development
 - Data Analytics
-- Open Source Learning
+- Learning by Building
 
 ---
 
 ## Tech Stack
 
-### Programming Languages
+### Languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=python,cpp,ts" />
+  <img src="https://skillicons.dev/icons?i=python,ts" />
 </p>
 
-### Web Development
+### Development
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,tailwind" />
 </p>
 
-### Backend & Database
+### Data
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,postgres" />
-</p>
-
-### Data Analytics
-
-<p>
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=googlesheets&logoColor=white" />
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
 </p>
 
-### Tools & Platforms
+### Tools
 
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,arduino" />
+  <img src="https://skillicons.dev/icons?i=github,vscode" />
 </p>
 
 ---
