@@ -7,55 +7,34 @@
 
 ## About Me
 
-I am a Physics student with an interest in **Software Development** and **Data Analytics**. I enjoy building practical projects, exploring how software works, and continuously improving my programming and problem-solving skills through hands-on learning.
+I'm a Physics student interested in **Software Development** and **Data Analytics**, with a focus on building practical projects and continuously improving through hands-on learning.
 
----
-
-## Current Focus
-
-- Software Development
-- Data Analytics
-- Learning by Building
-
----
+Currently exploring software engineering, data analysis, and problem-solving through real-world projects.
 
 ## Tech Stack
 
-### Languages
+**Languages**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,ts" />
-</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-### Development
+**Development**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,tailwind" />
-</p>
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-### Data
+**Data & Analytics**
 
-<p>
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-</p>
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
-### Tools
+**Tools**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=github,vscode" />
-</p>
-
----
-
-## Philosophy
-
-> **Learning by building.**
-
-I believe that building projects is one of the best ways to improve technical skills, understand new technologies, and solve practical problems.
-
----
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 ## Featured Project
 
@@ -63,25 +42,17 @@ I believe that building projects is one of the best ways to improve technical sk
   <img src="./assets/romantic-ending.svg" alt="Romantic Ending" width="85%"/>
 </p>
 
-A hand-animated pixel-art SVG scene built using pure SVG and native web animation, without images, JavaScript, or frameworks.
+A hand-animated pixel-art scene created using pure SVG and native web animation, without JavaScript or frameworks.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white" alt="SVG"/>
-  <img src="https://img.shields.io/badge/SMIL_Animation-000000?style=for-the-badge&logo=svg&logoColor=white" alt="SMIL Animation"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Pixel_Art-6E44FF?style=for-the-badge&logo=pixiv&logoColor=white" alt="Pixel Art"/>
-</p>
+![SVG](https://img.shields.io/badge/SVG-FFB13B?style=flat-square&logo=svg&logoColor=white)
+![SMIL](https://img.shields.io/badge/SMIL-555555?style=flat-square)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
+![Pixel Art](https://img.shields.io/badge/Pixel_Art-6E44FF?style=flat-square)
 
----
+## Connect
 
-## Connect With Me
-
-- **LinkedIn:** [Galuh Kurnia Pratama](http://www.linkedin.com/in/galuh-kurnia-pratama-a25b9b325)
-- **Instagram:** [@galhkoernia_](https://www.instagram.com/galhkoernia_/)
-- **Email:** galuhkoernia@gmail.com
+[LinkedIn](https://www.linkedin.com/in/galuh-kurnia-pratama-a25b9b325) · [Instagram](https://www.instagram.com/galhkoernia_/) · [Email](mailto:galuhkoernia@gmail.com)
 
 ---
 
-Thank you for visiting my GitHub profile.
-
-I am always learning, building, and exploring new ways to create useful technology.
+<sub>Always learning, building, and exploring.</sub>
