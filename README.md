@@ -12,7 +12,7 @@ Currently exploring software engineering, data analysis, and problem-solving thr
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/galuh-kurnia-pratama-a25b9b325) · [Instagram](https://www.instagram.com/galhkoernia_/) · [Email](mailto:galuhkoernia@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/galuh-kurnia-pratama) · [Instagram](https://www.instagram.com/galhkoernia_/) · [Email](mailto:galuhkoernia@gmail.com)
 
 ---
 <sub>Always learning, building, and exploring.</sub>
